@@ -1,0 +1,121 @@
+
+  <link href="css/style.css" rel="stylesheet"></head>
+
+ <header id="header" class="fixed-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+
+      <h1 class="logo me-auto me-lg-0"><a href="index.html">NENGSIH WARIS</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="active" href="home.html">Home</a></li>
+          <li><a href="galery.html">Galery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .slideshow-container {
+      position: relative;
+      width: 100%;
+      height: 300px;
+    }
+    
+    .slide {
+      display: none;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+    }
+    
+    .slide img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    
+    .slide.active {
+      display: block;
+    }
+    
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      font-size: 24px;
+      font-weight: bold;
+      padding: 16px;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+      transform: translateY(-50%);
+    }
+    
+    .prev {
+      left: 0;
+    }
+    
+    .next {
+      right: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="slideshow-container">
+    <div class="slide active">
+      <img src="gambar4.jpeg" alt="Gambar 1">
+    </div>
+    <div class="slide">
+      <img src="gambar2.jpg" alt="Gambar 2">
+    </div>
+    <div class="slide">
+      <img src="gambar3.jpg" alt="Gambar 3">
+    </div>
+    <div class="slide">
+      <img src="gambar1.jpg" alt="Gambar 3">
+    </div>
+    
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+  
+  <script>
+    let slideIndex = 0;
+    const slides = document.getElementsByClassName("slide");
+    
+    showSlide(slideIndex);
+    
+    function changeSlide(n) {
+      showSlide(slideIndex += n);
+    }
+    
+    function showSlide(n) {
+      if (n >= slides.length) {
+        slideIndex = 0;
+      }
+      if (n < 0) {
+        slideIndex = slides.length - 1;
+      }
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+      }
+      slides[slideIndex].classList.add("active");
+    }
+  </script>
+</body>
+</html>
+
+            </p>
+          </div>
+        </div>
+
+      </div>
+</head>
+<body>
+</html>
+      
+
